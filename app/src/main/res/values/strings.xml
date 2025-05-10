@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Android_LABS</string>
+
+    <!-- Common -->
+    <string name="total">Итого:</string>
+    <string name="save">Сохранить</string>
+    <string name="category">Категория</string>
+    <string name="price">Цена</string>
+    <string name="delete">Удалить</string>
+    <string name="add_expense">Добавить покупку</string>
+
+    <!--Нижнее меню-->
+    <string name="expenses">Покупки</string>
+    <string name="settings">Настройки</string>
+
+    <!--Локальное хранилище для файлов-->
+    <string name="export_to_XLS_app_storage">Экспорт в XLS файл в App-specific storage</string>
+    <string name="import_from_XLS_app_storage">Импорт из XLS файла в App-specific storage</string>
+    <string name="export_to_XLS_shared_storage">Экспорт в XLS файл в Shared storage</string>
+    <string name="import_from_XLS_shared_storage">Импорт из XLS файла в Shared storage</string>
+    <string name="export_to_PDF_shared_storage">Экспорт в PDF файл в Shared storage</string>
+    <string name="import_from_PDF_shared_storage">Импорт из PDF файла в Shared storage</string>
+    <string name="export_success">Экспорт завершен успешно</string>
+    <string name="export_failed">Экспорт не удался</string>
+    <string name="import_success">Импорт завершен успешно</string>
+    <string name="import_failed">Импорт не удался или нет данных</string>
+
+    <!-- Format strings -->
+    <string name="total_expense">Итого: $%.2f</string>
+    <string name="local_storage_type">Выберите тип локального хранилища:</string>
 </resources>

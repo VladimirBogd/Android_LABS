@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/expenseListFragment"
+        android:icon="@drawable/ic_list"
+        android:title="@string/expenses" />
+    <item
+        android:id="@+id/storageFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+</menu>
