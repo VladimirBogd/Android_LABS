@@ -30,6 +30,10 @@ class ExpenseRepositoryImpl @Inject constructor(
         return expenseDao.getTotalExpenses() ?: 0.0
     }
 
+    override fun generateExpense(expense: Expense) {
+        expenseDao.generateExpense(expense.toEntity())
+    }
+
     private fun Expense.toEntity(): ExpenseEntity {
         return ExpenseEntity(
             id = id,

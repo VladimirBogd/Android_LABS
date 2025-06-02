@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_expenseListFragment_to_addExpenseFragment"
             app:destination="@id/addExpenseFragment" />
+        <action
+            android:id="@+id/action_expenseListFragment_to_generateExpensesFragment"
+            app:destination="@id/generateExpensesFragment" />
     </fragment>
 
     <fragment
@@ -26,6 +29,15 @@
         android:name="com.example.android_labs.ui.view.StorageFragment"
         android:label="StorageFragment"
         tools:layout="@layout/fragment_storage" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/generateExpensesFragment"
+        android:name="com.example.android_labs.ui.view.GenerateExpensesFragment"
+        android:label="Generate Expenses">
+        <action
+            android:id="@+id/action_generateExpensesFragment_to_expenseListFragment"
+            app:destination="@id/expenseListFragment" />
     </fragment>
 
 </navigation>

@@ -49,4 +49,8 @@ object AppModule {
     @Provides
     @Singleton
     fun provideGetTotalExpensesUseCase(repository: ExpenseRepository) = GetTotalExpensesUseCase(repository)
+
+    @Provides
+    @Singleton
+    fun provideGenerateExpensesUseCase(repository: ExpenseRepository) = GenerateExpenseUseCase(repository)
 }

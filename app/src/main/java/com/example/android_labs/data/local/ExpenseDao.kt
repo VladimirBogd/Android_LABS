@@ -19,4 +19,7 @@ interface ExpenseDao {
 
     @Query("SELECT SUM(price) FROM expenses")
     suspend fun getTotalExpenses(): Double?
+
+    @Insert
+    fun generateExpense(expense: ExpenseEntity): Long
 }

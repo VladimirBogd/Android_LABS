@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.view.GenerateExpensesFragment">
+
+    <EditText
+        android:id="@+id/etCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of records"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etBaseCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base category"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etBasePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base price"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="0/0"/>
+
+    <Button
+        android:id="@+id/btnGenerateThreads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate with Threads"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCancelThreads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Thread Generation"
+        android:layout_marginTop="8dp"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/btnGenerateCoroutines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate with Coroutines"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCancelCoroutines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Coroutine Generation"
+        android:layout_marginTop="8dp"
+        android:enabled="false"/>
+</LinearLayout>

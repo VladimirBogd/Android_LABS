@@ -8,4 +8,5 @@ interface ExpenseRepository {
     suspend fun deleteExpense(expense: Expense)
     fun getAllExpenses(): Flow<List<Expense>>
     suspend fun getTotalExpenses(): Double?
+    fun generateExpense(expense: Expense)
 }

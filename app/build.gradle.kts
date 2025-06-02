@@ -41,6 +41,7 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true  // Добавлено, если используете ViewBinding
+        dataBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -67,6 +68,7 @@ dependencies {
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.core)
 
     // Тестирование
     testImplementation(libs.junit)
@@ -105,4 +107,14 @@ dependencies {
     implementation(libs.poi.ooxml)
     // Для работы с PDF
     implementation(libs.itext7.core)
+
+    // Retrofit с поддержкой HTTP/2
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+    // Moshi для JSON-сериализации
+    implementation("com.squareup.moshi:moshi:1.15.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
 }
